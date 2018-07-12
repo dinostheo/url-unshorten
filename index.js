@@ -1,4 +1,4 @@
-'use stricts';
+'use strict';
 
 const request = require('request');
 
@@ -12,7 +12,7 @@ function followShortUrl(urls, redirectCount = 0) {
   };
 
   return new Promise((resolve, reject) => {
-    request(options, async (error, response, body) => {
+    request(options, async (error, response) => {
       if (error) {
         return reject(error);
       }
@@ -24,7 +24,7 @@ function followShortUrl(urls, redirectCount = 0) {
       if (response.headers.location) {
         urls.push(response.headers.location);
 
-        await followShortUrl(urls, redirectCount++);
+        await followShortUrl(urls, redirectCount++); // eslint-disable-line no-param-reassign
       }
 
       resolve(urls);
@@ -32,8 +32,8 @@ function followShortUrl(urls, redirectCount = 0) {
   });
 }
 
-module.exports = url => {
-  return new Promise(async (resolve, reject) => {
+module.exports = url =>
+  new Promise(async (resolve, reject) => {
     try {
       const urls = await followShortUrl([url]);
 
@@ -45,4 +45,3 @@ module.exports = url => {
       reject(error);
     }
   });
-};
