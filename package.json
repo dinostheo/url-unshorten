@@ -7,9 +7,20 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": ["node.js", "unshort", "url"],
-  "author": "Dinos Theodorou",
+  "author": "Dinos Theodorou <dinostheo@gmail.com>",
   "license": "MIT",
   "dependencies": {
     "request": "^2.87.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dinostheo/url-unshorten.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dinostheo/url-unshorten/issues"
+  },
+  "homepage": "https://github.com/dinostheo/url-unshorten",
+  "engines": {
+    "node": ">=9.3.0"
   }
 }
