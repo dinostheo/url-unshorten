@@ -1,5 +1,7 @@
 # url-unshorten
 
+[![CircleCI](https://circleci.com/gh/dinostheo/url-unshorten/tree/master.svg?style=svg)](https://circleci.com/gh/dinostheo/url-unshorten/tree/master) [![Known Vulnerabilities](https://snyk.io/test/github/dinostheo/url-unshorten/badge.svg?targetFile=package.json)](https://snyk.io/test/github/dinostheo/url-unshorten?targetFile=package.json)
+
 Checks urls that might be shorten and returns all the potential redirects until its unshorten.
 
 # Installation
