@@ -25,9 +25,9 @@ function followShortUrl(urls, redirectCount = 0) {
         urls.push(response.headers.location);
 
         await followShortUrl(urls, redirectCount++);
-      } else {
-        resolve(urls);
       }
+
+      resolve(urls);
     });
   });
 }
