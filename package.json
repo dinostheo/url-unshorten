@@ -1,6 +1,6 @@
 {
   "name": "url-unshorten",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Unshortens shorten urls",
   "main": "index.js",
   "scripts": {

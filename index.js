@@ -37,7 +37,10 @@ module.exports = url => {
     try {
       const urls = await followShortUrl([url]);
 
-      resolve({ urls });
+      resolve({
+        urls,
+        unshorten: urls[urls.length - 1]
+      });
     } catch (error) {
       reject(error);
     }
