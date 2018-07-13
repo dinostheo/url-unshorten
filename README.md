@@ -5,15 +5,15 @@
 
 Checks urls that might be shorten and returns all the potential redirects until its unshorten.
 
-# Installation
+## Installation
 
 `npm i url-unshorten`
 
-# Usage
+## Usage
 
 The `url-unshorten` module exports a function that accepts a url and returns a promise that resolves with the array of the potential urls that redirect to the resolved unshorten one. For convenience it also outputs the unshorten url.
 
-## Example usage
+### Example usage
 
 ```js
 const unshort = require('url-unshorten');
@@ -38,6 +38,6 @@ The above snippet will output the following:
 }
 ```
 
-
 ## License
+
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fdinostheo%2Furl-unshorten.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fdinostheo%2Furl-unshorten?ref=badge_large)
