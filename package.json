@@ -1,6 +1,6 @@
 {
   "name": "url-unshorten",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Unshortens shorten urls",
   "main": "index.js",
   "scripts": {
@@ -9,7 +9,11 @@
     "precommit": "lint-staged",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["node.js", "unshort", "url"],
+  "keywords": [
+    "node.js",
+    "unshort",
+    "url"
+  ],
   "author": "Dinos Theodorou <dinostheo@gmail.com>",
   "license": "MIT",
   "dependencies": {
