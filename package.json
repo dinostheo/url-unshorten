@@ -17,7 +17,7 @@
   "author": "Dinos Theodorou <dinostheo@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "request": "^2.88.0"
+    "request": "^2.88.2"
   },
   "devDependencies": {
     "editorconfig": "^0.15.0",
